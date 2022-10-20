@@ -1,5 +1,5 @@
 from main import _mult,_sum,_min,_max
-a = [int(i) for i in open('/home/runner/work/hw2-hse/hw2-hse/t5.txt').readline().split()]
+a = [int(i) for i in open('/home/runner/work/hw2-hse/hw2-hse/hw2-hse/t5.txt').readline().split()]
 import unittest
 import math
 class test_area(unittest.TestCase):
