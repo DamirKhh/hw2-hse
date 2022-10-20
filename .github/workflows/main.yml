@@ -1,0 +1,38 @@
+name: ci
+
+
+on:
+  push:
+    branches: [ "master"]
+  pull_request:
+    branches: [ "master"]
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    env:
+      working-directory: ./hw2-hse
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+      - name: Time_test
+        working-directory: ${{env.working-directory}}
+        run: python time_test_CI.py
+      - name: Size_test
+        working-directory: ${{env.working-directory}}
+        run: python size_test_CI.py
+      - name: Unittest
+        working-directory: ${{env.working-directory}}
+        run: python -m unittest unittest__CI
+      - name: "telegram_notify"
+        uses: appleboy/telegram-action@master
+        with:
+          to: -1001839468202
+          token: 5428031519:AAFWujL2HGCVfH7mM7wPTDMHidHS0OvR0hw
+          args: Все ок.
+          
