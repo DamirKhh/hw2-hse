@@ -19,7 +19,7 @@
 ### Содержание папки .github/workflows
 - main.yml - реализованный CI
 
-### TelegramBot с оповещением от CI
+### TelegramBot с оповещением от CI:
 https://t.me/CI_Notifyy
 
 
