@@ -22,9 +22,9 @@
 
 ### График зависимости затраченного времени на работу программы от количества чисел в файле:
 
-![](https://github.com/DamirKhh/hw2-hse/blob/master/График.png)
+![](https://github.com/DamirKhh/hw2-hse/blob/main/График.png)
 
 
 Текущее статус тестов: 
-![](https://github.com/DamirKhh/hw2-hse/actions/workflows/main.yml/badge.svg?branch=master)
+![](https://github.com/DamirKhh/hw2-hse/actions/workflows/main.yml/badge.svg?branch=main)
 
