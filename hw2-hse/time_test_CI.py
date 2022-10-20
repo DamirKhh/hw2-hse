@@ -1,5 +1,5 @@
 from main import _mult
-a = [int(i) for i in open('/home/runner/work/hse-tz2-2022/hse-tz2-2022/hw2-hse/t5.txt').readline().split()]
+a = [int(i) for i in open('/home/runner/work/hw2-hse/hw2-hse/t5.txt').readline().split()]
 
 from datetime import datetime
 import time
